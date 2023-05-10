@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/icons/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link media="all" href="css/form_styles.css" rel="stylesheet">
+    <style>
+        html {
+            height: 100%
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: "Montserrat";
+            background: url(images/form_out_background.jpg) center;
+            background-size: cover;
+        }
+
+        h1 {
+            font-size: 20pt;
+            text-align: center;
+            margin: 10px;
+            margin-bottom: 40px;
+        }
+
+            h1 ~ p {
+                font-size: 12pt;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+        form {
+            background-color: #ffffff;
+            width: 300px;
+            padding: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #date {
+            border: none;
+        }
+
+            #date::backdrop {
+                background: rgba(0, 0, 0, 0.25);
+            }
+
+        .date_button {
+            background-color: #808080;
+            border: none;
+            width: 30px;
+            height: 30px;
+            font-size: 14pt;
+        }
+    </style>
+    <title>Форма для входа</title>
+</head>
+<body>
+    <form method="post" action="php/order.php">
+        <h1>Заказать стрижку</h1>
+        <p>
+            Укажите свой телефон и адрес парикмахерской, чтобы заказать стрижку в один клик
+        </p>
+        <p>
+            <label>Номер телефона</label><br>
+            <input type="tel" class="input_text_teg" name="telephone" placeholder="+375-00-000-00-00" required>
+        </p>
+        <p>
+            <label>Адрес</label><br>
+            <select class="input_text_teg" id="adres" name="adres" required></select>
+        </p>
+        <p>
+            <label>Дата</label><br>
+            <select class="input_text_teg" name="date" required>
+                <option disabled selected hidden>Выберите дату</option>
+            </select>
+        </p>
+        <p>
+            <label>Время</label><br>
+            <select class="input_text_teg" name="time" required>
+                <option disabled selected hidden>Выберите время</option>
+            </select>
+        </p>
+        <script src="js/adreses_list.js"></script>
+        <script>
+            fillAdresSelect("find_adres.php", "adres", "Выберите вариант");
+        </script>
+        <p>
+            <a href="">Очистить</a>
+        </p>
+        <p><input type="submit" value="Заказать" class="visuale_button submit_button"></p>
+    </form>
+</body>
+</html>

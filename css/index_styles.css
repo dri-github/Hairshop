@@ -1,0 +1,209 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("/project/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+}
+autor {
+  color: #A0A0A0;
+  float: right;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Montserrat;
+}
+
+body {
+    background-color: #ffffff;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    min-height: 100px;
+    width: 100%;
+    display: inline-block;
+    background-color: #ffffff;
+}
+
+.main_title {
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.login_box {
+    display: inline-block;
+    float: right;
+}
+.login_box_list {
+    list-style-type: none;
+    margin: 10px 10px;
+}
+.login_box_list li {
+    display: inline-block;
+    padding: 10px 10px;
+    margin: 0px -5px;
+}
+.login_box_list a {
+    text-decoration: none;
+    font-size: 12pt;
+    font-weight: bold;
+    padding: inherit;
+    background-color: #aadd00;
+    color: #000000;
+}
+.login_box_list a:hover {
+    background-color: #99cc00;
+}
+
+.menu_box {
+    width: 100%;
+    float: left;
+    display: flex;
+}
+
+.curtains_box {
+    float: left;
+    font-size: 14pt;
+}
+.curtains_box_list {
+    list-style-type: none;
+}
+.curtains_box_list li {
+    padding: 20px;
+}
+
+.data_of_curtain {
+    flex: 1;
+    background-color: #99CC00;
+    padding: 10px;
+}
+
+.main_page {
+    padding: 10px;
+    text-align: center;
+}
+.main_page p {
+    text-align: center;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.data {
+    font-size: 14pt;
+    padding: 10px;
+}
+.data p:nth-child(2) {
+    margin-top: 20px;
+}
+
+.services h1 {
+    text-align: center;
+}
+.services p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.prices {
+}
+.prices h1 {
+    text-align: center;
+}
+.prices table {
+    width: 100%;
+    line-height: 24px;
+}
+.prices td {
+    padding: 10px;
+    text-align: left;
+}
+
+.vacancies {
+    text-align: center;
+    font-size: 14pt;
+}
+
+.beast_workers {
+    clear: left;
+    padding: 10px;
+}
+.beast_workers h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.worker {
+    float: left;
+    margin: 10px;
+}
+.worker img {
+    float: left;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.worker p {
+    display: block;
+    line-height: 24px;
+}
+
+.prices_div h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.prices_div li {
+    display: inline-block;
+    list-style-type: none;
+}
+.prices_div div {
+    background-color: green;
+    padding: 5px;
+    margin-right: -100px;
+    width: 180px;
+    height: 400px;
+}
+.prices_div div:hover {
+    transition: all 0.2s linear 0s;
+    position: relative;
+
+}
+.prices_div div h5 {
+    writing-mode: vertical-rl;
+}
+
+.footer {
+    clear: left;
+    height: auto;
+    padding: 10px;
+    background-color: #99cc00;
+}
+
+.footer_white_box {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+}
+.footer_left {
+    padding: 5px 10px;
+    width: 340px;
+}
+.footer_right {
+    flex: 1;
+    background-color: #99cc00;
+    padding: 10px;
+}
+.sites_icon div {
+    display: inline-block;
+}
+.sites_icon img {
+    width: 64px;
+}
+.sites_icon img:hover {
+    transition: all 0.1s linear 0s;
+    transform: scale(0.9);
+}

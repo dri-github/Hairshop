@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("/project/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+}
+
+.input_text_teg {
+    width: 80%;
+    height: 28px;
+    border: 1px solid #808080;
+    margin: 5px 0px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 10pt;
+    float: right;
+    margin-right: 10px;
+}
+a:hover {
+    color: #808080;
+}
+
+.visuale_button {
+    border: none;
+    background-color: #aadd00;
+}
+.visuale_button:hover {
+    background-color: #99cc00;
+}
+
+.submit_button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+}
